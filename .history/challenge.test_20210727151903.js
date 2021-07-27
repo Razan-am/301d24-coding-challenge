@@ -28,13 +28,12 @@ Output: ['a','b','c','d','e','f']
 const addInTheMiddle = (arr, val) => {
     // Solution code here...
     let arrayLength = arr.length;
-    if( arrayLength %2 == 0){
-        arrayLength= Math.floor(arrayLength/2)
+    if( arrayLength !==2){
+       return Math.ceil(arrayLength/2)
     }else{
-        arrayLength= Math.ceil(arrayLength/2)
+       return Math.floor(arrayLength/2)
     }
-    arr.splice(arrayLength,0,val);
-    return arr
+    return arr.splice(arrayLength,0,val)
 };
 
 /* ------------------------------------------------------------------------------------------------

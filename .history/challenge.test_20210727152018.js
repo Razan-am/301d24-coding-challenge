@@ -33,8 +33,7 @@ const addInTheMiddle = (arr, val) => {
     }else{
         arrayLength= Math.ceil(arrayLength/2)
     }
-    arr.splice(arrayLength,0,val);
-    return arr
+    return arr.splice(arrayLength,0,val)
 };
 
 /* ------------------------------------------------------------------------------------------------
